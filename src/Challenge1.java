@@ -33,6 +33,7 @@ public class Challenge1 {
         System.out.println(everySecondChar.apply("ABCDEFGH")); //returns BDFH
         System.out.println(everySecondChar.apply("BlaiseBabey")); //returns lieae
         System.out.println(everySecondChar2.apply("0123456789")); //returns 13579
+        System.out.println(everySecondChar3("0123456789", everySecondChar2)); //returns 13579
     }
 
     //CHALLENGE 2
@@ -70,5 +71,12 @@ public class Challenge1 {
         }
         return sb.toString();
     };
+
+    //CHALLENGE 4
+
+    public static String everySecondChar3(String string, Function<String, String> func){
+        System.out.println("/////////////////////////challenge4///////////////////////////////");
+        return func.apply(string);
+    }
 }
 
