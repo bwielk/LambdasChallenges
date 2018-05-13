@@ -1,4 +1,5 @@
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class Challenge1 {
 
@@ -27,6 +28,10 @@ public class Challenge1 {
             }
         };
 
+        //CHALLENGE 5
+
+        Supplier<String> iLoveJava = () -> "I love Java";
+
 
         //TESTS
         r.run();
@@ -34,6 +39,7 @@ public class Challenge1 {
         System.out.println(everySecondChar.apply("BlaiseBabey")); //returns lieae
         System.out.println(everySecondChar2.apply("0123456789")); //returns 13579
         System.out.println(everySecondChar3("0123456789", everySecondChar2)); //returns 13579
+        System.out.println(iLoveJava.get());//returns I love Java
     }
 
     //CHALLENGE 2
@@ -74,7 +80,7 @@ public class Challenge1 {
 
     //CHALLENGE 4
 
-    public static String everySecondChar3(String string, Function<String, String> func){
+    public static String everySecondChar3(String string, Function<String, String> func) {
         System.out.println("/////////////////////////challenge4///////////////////////////////");
         return func.apply(string);
     }
