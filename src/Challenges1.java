@@ -1,7 +1,7 @@
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-public class Challenge1 {
+public class Challenges1 {
 
     public static void main(String[] args) {
 
