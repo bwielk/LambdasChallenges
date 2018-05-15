@@ -82,7 +82,7 @@ public class Challenges1 {
 
     public static String everySecondChar3(String string, Function<String, String> func) {
         System.out.println("/////////////////////////challenge4///////////////////////////////");
-        return func.apply(string);
+        return func.apply(
+string);
     }
 }
-
