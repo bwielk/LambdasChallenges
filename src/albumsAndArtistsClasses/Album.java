@@ -1,5 +1,8 @@
 package albumsAndArtistsClasses;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Album {
 
     private final String title;
