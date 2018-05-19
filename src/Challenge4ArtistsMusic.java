@@ -4,9 +4,7 @@ import albumsAndArtistsClasses.*;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 import static java.util.stream.Collectors.toList;
-import static java.util.stream.Collectors.toMap;
 
 public class Challenge4ArtistsMusic {
 
@@ -48,17 +46,30 @@ public class Challenge4ArtistsMusic {
                 .collect(toList());
         System.out.println(allArtists + "  class -> " + allArtists.getClass());
 
+
         System.out.println("///////////////Figure out which artists are bands////////////////////////");
         List<String> allBands = album.getSongs().stream()
                 .filter(song -> song.getArtist().isBand())
                 .map(song -> song.getArtist().getName())
                 .collect(toList());
         System.out.println(allBands);
+
+
         System.out.println("///////////////Find the nationalities of each band////////////////////////");
         Map<String, String> bandsAndNationalities = album.getSongs().stream()
                 .filter(song -> song.getArtist().isBand())
                 .collect(Collectors.toMap(song -> song.getArtist().getName(), song -> song.getArtist().getNationality()));
         System.out.println(bandsAndNationalities);
-        //4. Put together a set of these values.
+
+
+        System.out.println("///////////////Display all the English bands with 'The' in the beginnings and all their possible details////////////////////////");
+        album.getSongs().stream()
+                .filter(song -> song.getArtist().isBand())
+                .filter(song -> song.getArtist().getName().startsWith("The"))
+                .filter(song -> song.getArtist().getNationality().equals("English"))
+                .forEach(song -> System.out.println("========>\tName: " + song.getArtist().getName() +
+                                                    "\tNationality: " + song.getArtist().getNationality() +
+                                                    "\tIs it a band? : " + song.getArtist().isBand() +
+                                                    "\tSong Title: " + song.getTitle()));
     }
 }
