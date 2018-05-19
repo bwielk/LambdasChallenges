@@ -1,5 +1,9 @@
 import albumsAndArtistsClasses.*;
 
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
 public class Challenge4ArtistsMusic {
 
     public static void main(String[] args) {
@@ -33,5 +37,15 @@ public class Challenge4ArtistsMusic {
         //Listing the contents
         album.getSongs().forEach(song -> System.out.println(song.getArtist().getName() + " -> " + song.getTitle()));
         System.out.println("There are " + album.getSongs().size() + " songs");
+
+        System.out.println("///////////////Get all the artists for an album////////////////////////");
+        List<String> allArtists = album.getSongs().stream()
+                .map(song -> song.getArtist().getName())
+                .collect(Collectors.toList());
+        System.out.println(allArtists);
+
+        //2. Figure out which artists are bands.
+        //3. Find the nationalities of each band.
+        //4. Put together a set of these values.
     }
 }
