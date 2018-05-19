@@ -1,3 +1,5 @@
+package albumsAndArtistsClasses;
+
 public class Album {
 
     private final String title;

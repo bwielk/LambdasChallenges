@@ -1,3 +1,5 @@
+package albumsAndArtistsClasses;
+
 public class Song {
 
     private final Artist artist;
