@@ -14,6 +14,14 @@ public class Challenge4ArtistsMusic {
     Artist bjork = new Artist("Bjork", "Icelandic", false);
     Artist anitaBaker = new Artist("Anita Baker", "American", false);
     //Songs
-    
+    Song song1 = new Song(theBeatles, "Yesterday");
+    Song song2 = new Song(theBlackKeys, "Lonely Boy");
+    Song song3 = new Song(theSmiths, "How Soon Is Now");
+    Song song4 = new Song(adele, "Rolling In The Deep");
+    Song song5 = new Song(coldplay, "In My Place");
+    Song song6 = new Song(bjork, "Isobel");
+    Song song7 = new Song(anitaBaker, "Sweet Love");
+    //Adding Songs to the album
+
 
 }
