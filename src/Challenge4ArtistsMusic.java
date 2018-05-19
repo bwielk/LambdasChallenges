@@ -1,8 +1,12 @@
 import albumsAndArtistsClasses.*;
 
+
 import java.util.List;
-import java.util.stream.Collector;
+import java.util.Map;
 import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toMap;
 
 public class Challenge4ArtistsMusic {
 
@@ -41,11 +45,20 @@ public class Challenge4ArtistsMusic {
         System.out.println("///////////////Get all the artists for an album////////////////////////");
         List<String> allArtists = album.getSongs().stream()
                 .map(song -> song.getArtist().getName())
-                .collect(Collectors.toList());
-        System.out.println(allArtists);
+                .collect(toList());
+        System.out.println(allArtists + "  class -> " + allArtists.getClass());
 
-        //2. Figure out which artists are bands.
-        //3. Find the nationalities of each band.
+        System.out.println("///////////////Figure out which artists are bands////////////////////////");
+        List<String> allBands = album.getSongs().stream()
+                .filter(song -> song.getArtist().isBand())
+                .map(song -> song.getArtist().getName())
+                .collect(toList());
+        System.out.println(allBands);
+        System.out.println("///////////////Find the nationalities of each band////////////////////////");
+        Map<String, String> bandsAndNationalities = album.getSongs().stream()
+                .filter(song -> song.getArtist().isBand())
+                .collect(Collectors.toMap(song -> song.getArtist().getName(), song -> song.getArtist().getNationality()));
+        System.out.println(bandsAndNationalities);
         //4. Put together a set of these values.
     }
 }
