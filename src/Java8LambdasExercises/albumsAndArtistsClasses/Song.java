@@ -1,4 +1,4 @@
-package albumsAndArtistsClasses;
+package Java8LambdasExercises.albumsAndArtistsClasses;
 
 public class Song {
 

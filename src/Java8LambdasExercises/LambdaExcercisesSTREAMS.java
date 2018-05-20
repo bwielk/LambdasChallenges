@@ -1,6 +1,8 @@
-import albumsAndArtistsClasses.Album;
-import albumsAndArtistsClasses.Artist;
-import albumsAndArtistsClasses.Song;
+package Java8LambdasExercises;
+
+import Java8LambdasExercises.albumsAndArtistsClasses.Album;
+import Java8LambdasExercises.albumsAndArtistsClasses.Artist;
+import Java8LambdasExercises.albumsAndArtistsClasses.Song;
 
 import java.util.*;
 import java.util.stream.*;

@@ -1,4 +1,4 @@
-package albumsAndArtistsClasses;
+package Java8LambdasExercises.albumsAndArtistsClasses;
 
 import java.util.ArrayList;
 import java.util.List;

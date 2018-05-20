@@ -1,10 +1,12 @@
-import albumsAndArtistsClasses.*;
+package Java8LambdasExercises;
+
+import Java8LambdasExercises.albumsAndArtistsClasses.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
 import static java.util.stream.Collectors.toList;
 
-public class Challenges4_ArtistsMusic {
+public class ChallengeArtistsMusic {
 
     public static void main(String[] args) {
         //SETUP
