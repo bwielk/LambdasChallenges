@@ -38,13 +38,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Challenge4ArtistsMusic.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Challenge4ArtistsMusic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Challenge4ArtistsMusic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="103" column="63" selection-start-line="103" selection-start-column="63" selection-end-line="103" selection-end-column="63" />
+            <state relative-caret-position="119">
+              <caret line="12" column="49" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LambdaExcercises1.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LambdaExcercises1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="46" column="110" selection-start-line="46" selection-start-column="110" selection-end-line="46" selection-end-column="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/albumsAndArtistsClasses/Album.java" />
         <option value="$PROJECT_DIR$/src/albumsAndArtistsClasses/Song.java" />
         <option value="$PROJECT_DIR$/src/Challenge4ArtistsMusic.java" />
+        <option value="$PROJECT_DIR$/src/LambdaExcercises1.java" />
       </list>
     </option>
   </component>
@@ -153,12 +168,6 @@
               <item name="LambdaChallenges" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LambdaChallenges" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LambdaChallenges" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="albumsAndArtistsClasses" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -186,12 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Challenge4ArtistsMusic">
-    <configuration name="Challenge1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Challenge1" />
-      <module name="LambdaChallenges" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
+  <component name="RunManager" selected="Application.LambdaExcercises1">
     <configuration name="Challenge4ArtistsMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Challenge4ArtistsMusic" />
       <module name="LambdaChallenges" />
@@ -209,6 +213,11 @@
     </configuration>
     <configuration name="Challenges3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Challenges3" />
+      <module name="LambdaChallenges" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="LambdaExcercises1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LambdaExcercises1" />
       <module name="LambdaChallenges" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -254,19 +263,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Challenge1" />
       <item itemvalue="Application.Challenges2" />
       <item itemvalue="Application.Challenges1" />
       <item itemvalue="Application.Challenges3" />
       <item itemvalue="Application.Challenge4ArtistsMusic" />
+      <item itemvalue="Application.LambdaExcercises1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LambdaExcercises1" />
         <item itemvalue="Application.Challenge4ArtistsMusic" />
         <item itemvalue="Application.Challenges3" />
         <item itemvalue="Application.Challenges2" />
         <item itemvalue="Application.Challenges1" />
-        <item itemvalue="Application.Challenge1" />
       </list>
     </recent_temporary>
   </component>
@@ -295,12 +304,12 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3489499" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3489499" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25341427" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25341427" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32956383" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -409,10 +418,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Challenge4ArtistsMusic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="103" column="63" selection-start-line="103" selection-start-column="63" selection-end-line="103" selection-end-column="63" />
+        <state relative-caret-position="119">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LambdaExcercises1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="46" column="110" selection-start-line="46" selection-start-column="110" selection-end-line="46" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
           </folding>
         </state>
       </provider>
