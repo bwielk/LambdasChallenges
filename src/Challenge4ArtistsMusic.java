@@ -89,18 +89,19 @@ public class Challenge4ArtistsMusic {
 
         System.out.println("///////////////findLongTracks method refactor////////////////////////");
         System.out.println(findLongTracks(albums, 280).toString());
+        System.out.println("================>>>REFACTOR<<<================");
+        System.out.println(findLongTracks(albums, 285).toString());
+
     }
 
     public static Set<String> findLongTracks(List<Album> albums, int searchedLength) {
         Set<String> trackNames = new HashSet<>();
-        for(Album album : albums) {
-            for (Song track : album.getSongs()) {
-                if (track.getLength() > searchedLength) {
-                    String name = track.getTitle();
-                    trackNames.add(name);
-                }
-            }
-        }
+        albums.stream().forEach(album -> {
+            album.getSongs().stream().filter(song -> song.getLength()>searchedLength)
+                    .map(track -> "''" + track.getTitle() + "'' by " + track.getArtist().getName() +
+                            " LENGTH: " + track.getLength())
+                    .forEach(song -> trackNames.add(song));
+        });
         return trackNames;
     }
 }

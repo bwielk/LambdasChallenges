@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c999df54-bd7c-4a29-b269-f598f85c1a4c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/Challenge4ArtistsMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Challenge4ArtistsMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/albumsAndArtistsClasses/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/albumsAndArtistsClasses/Song.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="Challenge4ArtistsMusic.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Challenge4ArtistsMusic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="68">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -296,12 +295,12 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3489499" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3489499" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25341427" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25341427" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32956383" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -410,8 +409,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Challenge4ArtistsMusic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="68">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
