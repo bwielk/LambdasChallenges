@@ -1,14 +1,17 @@
 import albumsAndArtistsClasses.Album;
 import albumsAndArtistsClasses.Artist;
 import albumsAndArtistsClasses.Song;
-import java.util.stream.Stream;
+
+import java.util.*;
+import java.util.stream.*;
 
 public class LambdaExcercises1 {
 
     //The following tasks come from the "Java 8 Lambdas book" by Richard Warburton
 
     public static void main(String[] args) {
-        System.out.println("EXERCISE 1 => \n" + addUp(Stream.of(12,14,16,100)));
+        System.out.println("EXERCISE 1 => \n" + addUp(Stream.of(12,14,16,100)));//should return 142
+        System.out.println("EXERCISE 1 => \n" + addUp(Stream.of(100,240,160,200)));//should return 700
 
         Album album1 = new Album("Pop Compilation");
         Album album2 = new Album("Rock Compilation");
@@ -30,11 +33,17 @@ public class LambdaExcercises1 {
         album1.addSong(song5);
         album1.addSong(song6);
         album1.addSong(song7);
-        album1.addSong(song8);
+        //album1.addSong(song8);
         album2.addSong(song1);
         album2.addSong(song2);
         album2.addSong(song3);
         album2.addSong(song4);
+
+        System.out.println("EXERCISE 2 => \n" + getArtistNamesAndOrigins(Stream.of(adele, theBeatles, theSmiths)).toString());
+        System.out.println("EXERCISE 2 => \n" + getArtistNamesAndOrigins(Stream.of(theSmiths, theBlackKeys)).toString());
+
+        System.out.println("EXERCISE 3 =>");
+        getAlbumsWith3TracksAtMost(Stream.of(album1, album2)).forEach(album -> System.out.println(album.getTitle()));//Should return the Pop Compilation
     }
 
     ///////////////////////////////////////////////////TASK1//////////////////////////////////////////////////
@@ -45,7 +54,16 @@ public class LambdaExcercises1 {
         return numbers.reduce(0, (acc, el) -> acc + el);
     }
     //b. A function that takes in artists and returns a list of strings with their names and places of origins
-
+    private static List<String> getArtistNamesAndOrigins(Stream<Artist> artists){
+        return artists
+                .map(artist -> artist.getName() + " NATIONALITY: " +  artist.getNationality())
+                .collect(Collectors.toList());
+    }
     //c. A function that takes in albums and returns a list of albums with at most three tracks
+    private static List<Album> getAlbumsWith3TracksAtMost(Stream<Album> albums){
+        return albums
+                .filter(album -> album.getSongs().size()<=3)
+                .collect(Collectors.toList());
+    }
 
 }
