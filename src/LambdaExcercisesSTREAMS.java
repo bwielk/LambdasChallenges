@@ -53,6 +53,9 @@ public class LambdaExcercisesSTREAMS {
         System.out.println(numOfLowerCaseChars("AngoLA"));//should return 3
         System.out.println(numOfLowerCaseChars("ToBE or Not TO Beee1"));//should return 8
         System.out.println(numOfLowerCaseChars("CrepuscuLAR SOLIdao"));//should return 10
+
+        System.out.println("//////////////////////////////////////////////////TASK7//////////////////////////////////////////////////");
+        System.out.println(stringWithALargestNumOfLowercaseChars(Stream.of("BlazejWielk", "Cesaria", "I like dogs and seals")));
     }
 
     ///////////////////////////////////////////////////TASK1//////////////////////////////////////////////////
@@ -94,6 +97,13 @@ public class LambdaExcercisesSTREAMS {
 
     public static int numOfLowerCaseChars(String word){
         return (int) word.chars().filter(c -> Character.isLowerCase(c)).count();
+    }
+
+    ///////////////////////////////////////////////////TASK7//////////////////////////////////////////////////
+    //Find the String with the largest number of lowercase letters from a List<String>
+
+    public static String stringWithALargestNumOfLowercaseChars(Stream<String> words){
+        return words.max(Comparator.comparing(word -> numOfLowerCaseChars(word))).toString();
     }
 
 }
