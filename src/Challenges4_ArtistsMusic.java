@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import static java.util.stream.Collectors.toList;
 
-public class Challenge4ArtistsMusic {
+public class Challenges4_ArtistsMusic {
 
     public static void main(String[] args) {
         //SETUP

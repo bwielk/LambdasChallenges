@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c999df54-bd7c-4a29-b269-f598f85c1a4c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LambdaExcercises1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LambdaExcercises1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Challenge4ArtistsMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Challenges4_ArtistsMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LambdaExcercises1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LambdaExcercisesSTREAMS.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Challenge4ArtistsMusic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Challenge4ArtistsMusic.java">
+      <file leaf-file-name="Challenges4_ArtistsMusic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Challenges4_ArtistsMusic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="49" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="49" />
+            <state relative-caret-position="255">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LambdaExcercises1.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LambdaExcercises1.java">
+      <file leaf-file-name="LambdaExcercisesSTREAMS.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LambdaExcercisesSTREAMS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="45" column="152" selection-start-line="45" selection-start-column="152" selection-end-line="45" selection-end-column="152" />
+            <state relative-caret-position="270">
+              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#350#351#0" expanded="true" />
@@ -135,8 +137,9 @@
         <option value="$PROJECT_DIR$/albumsAndArtistsClasses/Album.java" />
         <option value="$PROJECT_DIR$/src/albumsAndArtistsClasses/Album.java" />
         <option value="$PROJECT_DIR$/src/albumsAndArtistsClasses/Song.java" />
-        <option value="$PROJECT_DIR$/src/Challenge4ArtistsMusic.java" />
         <option value="$PROJECT_DIR$/src/LambdaExcercises1.java" />
+        <option value="$PROJECT_DIR$/src/Challenge4ArtistsMusic.java" />
+        <option value="$PROJECT_DIR$/src/LambdaExcercisesSTREAMS.java" />
       </list>
     </option>
   </component>
@@ -195,14 +198,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LambdaExcercises1">
+  <component name="RunManager" selected="Application.LambdaExcercisesSTREAMS">
     <configuration name="Challenge4ArtistsMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Challenge4ArtistsMusic" />
-      <module name="LambdaChallenges" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Challenges1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Challenges1" />
       <module name="LambdaChallenges" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -218,6 +216,11 @@
     </configuration>
     <configuration name="LambdaExcercises1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LambdaExcercises1" />
+      <module name="LambdaChallenges" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="LambdaExcercisesSTREAMS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LambdaExcercisesSTREAMS" />
       <module name="LambdaChallenges" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -264,18 +267,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Challenges2" />
-      <item itemvalue="Application.Challenges1" />
       <item itemvalue="Application.Challenges3" />
       <item itemvalue="Application.Challenge4ArtistsMusic" />
       <item itemvalue="Application.LambdaExcercises1" />
+      <item itemvalue="Application.LambdaExcercisesSTREAMS" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LambdaExcercisesSTREAMS" />
         <item itemvalue="Application.LambdaExcercises1" />
         <item itemvalue="Application.Challenge4ArtistsMusic" />
         <item itemvalue="Application.Challenges3" />
         <item itemvalue="Application.Challenges2" />
-        <item itemvalue="Application.Challenges1" />
       </list>
     </recent_temporary>
   </component>
@@ -406,16 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Challenge4ArtistsMusic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="49" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/albumsAndArtistsClasses/Album.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -426,10 +419,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LambdaExcercises1.java">
+    <entry file="file://$PROJECT_DIR$/src/Challenges4_ArtistsMusic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="45" column="152" selection-start-line="45" selection-start-column="152" selection-end-line="45" selection-end-column="152" />
+        <state relative-caret-position="255">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LambdaExcercisesSTREAMS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#350#351#0" expanded="true" />

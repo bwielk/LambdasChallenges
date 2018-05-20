@@ -5,11 +5,12 @@ import albumsAndArtistsClasses.Song;
 import java.util.*;
 import java.util.stream.*;
 
-public class LambdaExcercises1 {
+public class LambdaExcercisesSTREAMS {
 
     //The following tasks come from the "Java 8 Lambdas book" by Richard Warburton
 
     public static void main(String[] args) {
+        System.out.println("//////////////////////////////////////////////////TASK1//////////////////////////////////////////////////");
         System.out.println("EXERCISE 1 => \n" + addUp(Stream.of(12,14,16,100)));//should return 142
         System.out.println("EXERCISE 1 => \n" + addUp(Stream.of(100,240,160,200)));//should return 700
 
@@ -44,6 +45,9 @@ public class LambdaExcercises1 {
 
         System.out.println("EXERCISE 3 =>");
         getAlbumsWith3TracksAtMost(Stream.of(album1, album2)).forEach(album -> System.out.println(album.getTitle()));//Should return the Pop Compilation
+
+        System.out.println("//////////////////////////////////////////////////TASK2//////////////////////////////////////////////////");
+        System.out.println(numberOfSongsInAlbums(Stream.of(album1, album2)));//should return 7
     }
 
     ///////////////////////////////////////////////////TASK1//////////////////////////////////////////////////
@@ -66,4 +70,17 @@ public class LambdaExcercises1 {
                 .collect(Collectors.toList());
     }
 
+    ///////////////////////////////////////////////////TASK2//////////////////////////////////////////////////
+    //Iteration. Convert this code sample from using external iteration to internal iteration:
+
+    //    int totalMembers = 0;
+    //    for (Artist artist : artists) {
+    //            Stream<Artist> members = artist.getMembers();
+    //            totalMembers += members.count();
+    //    }
+
+    public static int numberOfSongsInAlbums(Stream<Album> albums){
+        return (int) StreamSupport
+                .stream(albums.flatMap(album -> album.getSongs().stream()).spliterator(), true).count();
+    }
 }
