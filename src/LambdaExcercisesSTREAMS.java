@@ -48,6 +48,11 @@ public class LambdaExcercisesSTREAMS {
 
         System.out.println("//////////////////////////////////////////////////TASK2//////////////////////////////////////////////////");
         System.out.println(numberOfSongsInAlbums(Stream.of(album1, album2)));//should return 7
+
+        System.out.println("//////////////////////////////////////////////////TASK6//////////////////////////////////////////////////");
+        System.out.println(numOfLowerCaseChars("AngoLA"));//should return 3
+        System.out.println(numOfLowerCaseChars("ToBE or Not TO Beee1"));//should return 8
+        System.out.println(numOfLowerCaseChars("CrepuscuLAR SOLIdao"));//should return 10
     }
 
     ///////////////////////////////////////////////////TASK1//////////////////////////////////////////////////
@@ -83,4 +88,12 @@ public class LambdaExcercisesSTREAMS {
         return (int) StreamSupport
                 .stream(albums.flatMap(album -> album.getSongs().stream()).spliterator(), true).count();
     }
+
+    ///////////////////////////////////////////////////TASK6//////////////////////////////////////////////////
+    //Count the number of lowercase letters in a String
+
+    public static int numOfLowerCaseChars(String word){
+        return (int) word.chars().filter(c -> Character.isLowerCase(c)).count();
+    }
+
 }
