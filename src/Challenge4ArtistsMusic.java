@@ -96,12 +96,12 @@ public class Challenge4ArtistsMusic {
 
     public static Set<String> findLongTracks(List<Album> albums, int searchedLength) {
         Set<String> trackNames = new HashSet<>();
-        albums.stream().forEach(album -> {
-            album.getSongs().stream().filter(song -> song.getLength()>searchedLength)
-                    .map(track -> "''" + track.getTitle() + "'' by " + track.getArtist().getName() +
-                            " LENGTH: " + track.getLength())
-                    .forEach(song -> trackNames.add(song));
-        });
+        albums.stream()
+                .flatMap(album -> album.getSongs()
+                        .stream()
+                        .filter(song -> song.getLength()>searchedLength)
+                        .map(song -> "''" + song.getTitle() + "'' by " + song.getArtist().getName() + " LENGTH: " + song.getLength()))
+                        .forEach(song -> trackNames.add(song));
         return trackNames;
     }
 }
